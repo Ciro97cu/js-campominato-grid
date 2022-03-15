@@ -6,17 +6,10 @@ body {
     margin-top: 50px;
 }
 
-.buttons {
-    display: flex;
-    column-gap: 20px;
-}
-
-.buttons > * {
-    background-color: plum;
-    border: 1px solid black;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 3px;
+h1 {
+    font-size: 50px;
+    color: plum;
+    text-shadow: 0 0 10px plum;
 }
 
 #grid {
@@ -29,12 +22,25 @@ body {
 
 .cell {
     border: 1px solid black;
-    width: 100px;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.cell-level1 {
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.cell-level2 {
+    width: calc(100% / 9);
+    aspect-ratio: 1;
+}
+
+.cell-level3 {
+    width: calc(100% / 7);
+    aspect-ratio: 1;
 }
 
 .bgc-sky {
