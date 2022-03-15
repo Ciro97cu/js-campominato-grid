@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.buttons > * {
+    background-color: skyblue;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#grid {
+    background-color: skyblue;
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
